@@ -3,7 +3,7 @@
  */
 package nu.milsson.fullambda.test;
 
-class Market
+public class Market
 {
 	String name;
 	
@@ -17,7 +17,7 @@ class Market
 		
 	}
 
-	String getName() {
+	public String getName() {
 		return name;
 	}
 

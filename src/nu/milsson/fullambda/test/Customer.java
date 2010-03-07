@@ -6,13 +6,13 @@ package nu.milsson.fullambda.test;
 import java.util.HashMap;
 import java.util.Map;
 
-class Customer
+public class Customer
 {
 	private String name;
 	private Address address;
 	private Map<Market,Integer> orders;
 	
-	Customer(String name, Address address)
+	public Customer(String name, Address address)
 	{
 		this.name = name;
 		this.address = address;
@@ -23,20 +23,20 @@ class Customer
 		
 	}
 	
-	String getName() {
+	public String getName() {
 		return name;
 	}
 
-	Address getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 
-	void addOrder(Market market)
+	public void addOrder(Market market)
 	{
 		orders.put(market, getOrders(market)+1);
 	}
 	
-	int getOrders(Market m)
+	public int getOrders(Market m)
 	{
 		Integer os = orders.get(m);
 		return (os != null) ? os.intValue() : 0;

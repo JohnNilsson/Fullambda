@@ -3,20 +3,19 @@
  */
 package nu.milsson.fullambda.test;
 
-class Address
+public class Address
 {
 	private String street;
 
 	Address(String street) {
 		this.street = street;
 	}
-
-	String getStreet() {
-		return street;
-	}
 	
 	Address()
-	{
-		
+	{	
+	}
+
+	public String getStreet() {
+		return street;
 	}
 }
